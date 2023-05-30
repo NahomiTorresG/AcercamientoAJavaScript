@@ -36,13 +36,13 @@ Felipe tiene 17 años, y quiere ir a una fiesta. Dicha fiesta solo es para perso
 
 Evaluamos solo una expresion (si felipe tiene menos de 18 años), en caso de que sea verdadero, mostraremos el mensaje dentro del bloque. Si es falsa, no mostrará nada porque nuestro programa no está preparado para esa situación (incertidumbre).
 */
-
+/*
 let edadFelipe = 17; //Debemos tomar en cuenta primero la edad de felipe
 let edadPermitida = 18;
 if (edadFelipe < edadPermitida){
     console.log("Lo siento Felipe, no puedes ir a la fiesta")
 }
-
+*/
 
 /*
 
@@ -123,7 +123,7 @@ if (edadDeDavid > edadPermitidaDelAntro){
     console.log("Lo siento, no tienes dinerito suficiente para pagar el cover");
 }
 */
-
+/*
 let hora = prompt("Ingrese la hora actual");
 if (hora < 12){
     console.log("Buenos días");
@@ -131,4 +131,69 @@ if (hora < 12){
     console.log("Buenas tardes ya, que barbaro como pasa el tiempo");
 }else{
     console.log("Buenas noches, vamos a mimir");
+}
+*/
+
+/*Switch
+
+Esta condicional nos permite hacer multiples operaciones y tomar decisiones en funcion de distintos estados de las variables.
+Evalúa una expresión comparando el valor de un dato o variable, y ejecutando la instruccion asociada a ese caso.
+
+    -case: Evalúa el caso o condicion asociado que dispara un bloque de codigo
+    -break: Terminar el proceso sin que tengamos que pasar por todas las iteraciones o casos.
+    -default: Termina el proceso en caso de que ninguna de las evaluaciones sea correcta (similar al else)
+
+
+switch (expresion o condicion){
+    case valor1:
+        //codigo que se ejecuta si la condicion es igual al valor1
+    break;
+
+    default:
+        //Ingresaste un piso incorrecto (un bloque de codigo que se ejecuta si no se cumple con ninguna de las condiciones anteriores)
+}
+
+*/
+
+//Ejemplo de switch
+
+let pisoDestino = prompt("Ingresa el piso al que quieras ir (1 al 5)");
+
+switch(pisoDestino){
+    //para jugar con nuestros casos, el tipo de dato debe coincidir para que se ejecute correctamente
+    case "1":
+        console.log("Vamos a piso 1 (suena musica de elevador de fondo)")
+        break;
+
+    case "2":
+        console.log("Vamos a piso 2 (suena musica de elevador de fondo)")
+        break;
+
+    case "3":
+        console.log("Vamos a piso 3 (suena musica de elevador de fondo)")
+        break;
+
+    case "4":
+        console.log("Vamos a piso 4 (suena musica de elevador de fondo)")
+        break;
+
+    case "5":
+        console.log("Vamos a piso 5 (suena musica de elevador de fondo)")
+        break;
+
+}
+
+
+//Ejercicio de Evee
+
+var elementoEvolucion = prompt ("Ingresa el elemento con el que evolucionarás a tu pokémon");
+
+switch(elementoEvolucion){
+    case "piedraFuego":
+        console.log("Tu Evee ha evolucionado a Flareon");
+        break
+
+    case "piedraFuego":
+        console.log("Tu Evee ha evolucionado a Flareon");
+        break
 }
