@@ -146,14 +146,14 @@ console.log(listaDeComprasDeLaQuincena.join("***"));
 
 
 
-//Métodos splice, reverse, sort, toStrig
+//Métodos splice, reverse, sort, toString
 
 //Método para modificar un array (eliminando, reemplazando y agregando elementos)
-console.log(listaDeComprasDeLaQuincena.splice(3, 1)); //Aquí borró un elemento a partir del elemento 3 que fue Mazapán
+console.log(listaDeComprasDeLaQuincena.splice(1, 1)); //Aquí borró un elemento a partir del elemento 3 que fue Mazapán
 
-console.log(listaDeComprasDeLaQuincena.splice(3, 1, "uvas")); //Este afectará a manzanas porque ya ocupaba el elemento 3
+console.log(listaDeComprasDeLaQuincena.splice(2, 1, "uvas")); //Este afectará a manzanas porque ya ocupaba el elemento 3
 
-console.log(listaDeComprasDeLaQuincena.splice(6,0, "brócoli","zanahorias")); //Aquí se agregaron dos elementos más después de la posición 6. Se debe usar cero para indicar que no se está reeemplazando ni eliminando otros elementos.
+console.log(listaDeComprasDeLaQuincena.splice(6,0, "apio","lechuga", "papa")); //Aquí se agregaron dos elementos más después de la posición 6. Se debe usar cero para indicar que no se está reeemplazando ni eliminando otros elementos.
 
 console.log(listaDeComprasDeLaQuincena);//Aquí ya aparecen todos los cambios realizados.
 
@@ -168,3 +168,34 @@ console.log(listaDeComprasDeLaQuincena.sort()); //aparecen diferentes porque son
 
 //Método para convertir en cadena de texto lo que está dentro del array 
 console.log(listaDeComprasDeLaQuincena.toString());
+
+
+
+
+
+//Modificacion del arreglo: (push, pop, shift, unshift, splice)
+
+//Acceso y busqueda de elementos: (indexOf, LastIndexOf, includes)
+
+//Transformacion de elementos (sort, reverse, map, forEach)
+
+//Operaciones logicas (Every, some)
+
+//Creacion de nuevos arreglos: (slice, concat, join, reverse)
+
+
+//Splice (agregar, eliminar o reemplazar elementos en pocisiones espedificas)
+
+//Síntaxis del splice.
+//Array.splice(iniciamos, numeroElementosABorrar, ElementoAInsertar, ElementoAInsertar)
+var abecedario = ["A", "B", "C", "D", "E"];//Borrar C y D
+
+abecedario.splice(2,2);
+
+console.log(abecedario);
+
+
+//Splice para insertar elementos
+abecedario.splice(2,0, "C", "D");
+
+console.log(abecedario);
