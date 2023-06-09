@@ -13,7 +13,6 @@ var valorContador = 0;
 
 
 //Logica de negocio
-
 function incrementar(){
     valorContador++;
     numeroContador.innerHTML = valorContador;
@@ -22,10 +21,6 @@ function incrementar(){
         mostrarImagen();
     }
 }
-
-
-
-
 
 function decrementar(){
     valorContador--;
@@ -55,13 +50,10 @@ function mostrarImagen(){
     memeRandom.src = urlAleatoria;
     //Cambia la propiedad de visualizacion (display) a un block
     memeRandom.style.display = "block";
-
-
 }
 
 
 //Eventos en los botones
-
 botonIncrementar.addEventListener("click", incrementar);
 botonDecrementar.addEventListener("click", decrementar);
 botonResetear.addEventListener("click", resetear);
